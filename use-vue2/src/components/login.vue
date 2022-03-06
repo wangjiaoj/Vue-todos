@@ -33,7 +33,7 @@
 
     }
 </script>
-<style lang="scss">
+<style lang="less">
     .login-box {
         width: 400px;
         margin: 100px auto;

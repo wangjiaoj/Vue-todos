@@ -70,7 +70,7 @@ module.exports = {
                     'vue-style-loader', 'css-loader'
                 ]
             }, {
-                test: /\.scss$/,
+                test: /\.less$/,
                 use: [
                     //     {
                     //     loader: MiniCssExtractPlugin.loader,
@@ -80,7 +80,7 @@ module.exports = {
                     //         publicPath: './src'
                     //     }
                     // }, 
-                    'vue-style-loader', 'css-loader', 'sass-loader'
+                    'vue-style-loader', 'css-loader', 'less-loader'
                 ]
             }, {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
