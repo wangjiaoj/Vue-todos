@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import List from '../views/list/index.vue'
-
+import Detail from '../views/detail/index.vue';
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/List',
     name: 'List',
     component: List
+  },
+  {
+    path: '/Detail',
+    name: 'Detail',
+    component:Detail
   },
   {
     path: '/about',

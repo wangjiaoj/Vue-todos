@@ -1,0 +1,15 @@
+.common_scroll_bar(@width:8px,@height:8px){
+    overflow: auto;
+    &::-webkit-scrollbar{
+        width:@width;
+        height: @height;
+    }
+    &::-webkit-scrollbar-track{
+        background: transparent;
+        border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb{
+        border-radius: 4px;
+        background: rgba(74,75,114,.4);
+    }
+}
