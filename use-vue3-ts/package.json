@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "vite": "vite",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -34,6 +35,9 @@
     "less-loader": "^5.0.0",
     "mockjs": "^1.1.0",
     "postcss-pxtorem": "^5.1.1",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "@vitejs/plugin-vue": "^2.3.0",
+    "vite": "^2.9.0",
+    "vue-tsc": "^0.29.8"
   }
 }

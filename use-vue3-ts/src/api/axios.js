@@ -20,7 +20,7 @@ let removePending = config => {
 };
 // 创建axios实例
 const server = axios.create({
-    baseURL: process.env.BASE_API, // api的base_url
+   // baseURL: process.env.BASE_API, // api的base_url
     withCredentials: true,
     timeout: 30000 // 请求超时时间
 });
