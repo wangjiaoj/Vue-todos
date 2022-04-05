@@ -32,7 +32,7 @@ export default defineComponent({
 <style>
  
 </style>
-<style lang="less">
+<style lang="less" scoped>
 .list-item{
   width:345px;
   height: 150px;

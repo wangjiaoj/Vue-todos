@@ -1,5 +1,5 @@
-// useSomeData.js
-import { reactive, onMounted,toRefs } from '@vue/runtime-dom'
+// useSomeData.ts
+import { reactive, onMounted,toRefs } from 'vue'
 import {get_userData} from '@/api/list/index';
 export default function useSomeData() {
 
@@ -23,10 +23,11 @@ export default function useSomeData() {
 
     // 异步获取数据
 
-    get_userData().then(result => {
+    get_userData().then((result:any) => {
 
       const { userInfo, projectList } = result;
-      console.log(userInfo)
+      console.log('userInfo',userInfo);
+      console.log('projectList',projectList)
       data.userInfo = userInfo
 
       data.projectList = projectList
@@ -35,14 +36,8 @@ export default function useSomeData() {
   })
 
   // 使用toRefs
-  return toRefs(data)
-  // return toRefs({
-
-  //   projectList: data.projectList,
-
-  //   userInfo: toRefs(data.userInfo)
-
-  // })
+   return toRefs(data)
+ 
    
 
 }

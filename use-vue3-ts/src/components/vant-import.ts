@@ -1,6 +1,5 @@
 // vant.forEach((item: any) => app.use(item))
 import { Button, List, Loading, Search, Popup, Sticky, Swipe, SwipeItem, Empty, Toast } from 'vant';
-import 'vant/lib/index.css'
 export default {   
       version: '1.0.0',   
        author: 'wjj',   

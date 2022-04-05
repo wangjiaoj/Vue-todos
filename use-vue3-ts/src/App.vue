@@ -4,7 +4,7 @@
 </template>
 
 <style lang="less">
-@import './assets/reset.less';
+@import '~@/assets/reset.less';
 html{
   font-size: 10vw;
 }
