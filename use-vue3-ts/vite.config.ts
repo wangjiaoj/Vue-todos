@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import  styleImport, { VantResolve } from 'vite-plugin-style-import'
 // https://vitejs.dev/config/
 export default defineConfig({
+  //定义全局变量
    define: {
     'process.env': {
       NODE_ENV : 'development',

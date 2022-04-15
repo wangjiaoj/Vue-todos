@@ -1,11 +1,17 @@
 # use-vue3-ts
 ## 一、介绍
+vite/vue-cli打包均支持的依赖vant的移动端h5示例项目
+使用vue3最佳实践:setup+vue3+typescript
+
 ### 技术栈:vue3/TypeScript/setup
 ### 打包支持:vue-cli/vite
-### auto-import
+
 ### UI库:vant
 ### postCSS/postcss-pxtorem
 ### mockJS
+### unplugin-auto-import
+
+
 
 ## 二、 Project setup
 ```
