@@ -10,8 +10,6 @@
 </template>
 
 <script lang="ts">
- 
-import {ref,reactive,defineComponent,onMounted}from 'vue';
 import useSomeData from './useSomeData' 
 export default defineComponent({
   components:{

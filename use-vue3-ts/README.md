@@ -1,7 +1,8 @@
 # use-vue3-ts
 ## 一、介绍
-### 技术栈:vue3/TypeScript
+### 技术栈:vue3/TypeScript/setup
 ### 打包支持:vue-cli/vite
+### auto-import
 ### UI库:vant
 ### postCSS/postcss-pxtorem
 ### mockJS

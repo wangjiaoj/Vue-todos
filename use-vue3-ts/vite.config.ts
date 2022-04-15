@@ -87,6 +87,7 @@ export default defineConfig({
     extensions:['.vue','.js','.ts']
   },
   server: {
+    port:9098,
     proxy: {
         '/xx-web': {
             target: 'https://xx/',
