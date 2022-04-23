@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup>
-  import ListItem from './components/item.vue';
+  import ListItem from './components/listItem';
   import useDataList from './useDataList';
   import {get_surveyData} from '@/api/list/index'; 
   import type {listType} from './types';

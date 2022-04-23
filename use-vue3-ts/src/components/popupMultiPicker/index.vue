@@ -88,10 +88,12 @@ export default {
    padding-bottom:20px;
    display:flex;
    justify-content: space-around;
+   font-size: var(--van-picker-action-font-size)
   //  align-item:
 }
 .group-list{
   max-height:400px;
   overflow-y:auto;
+  text-align: left;
 }
 </style>

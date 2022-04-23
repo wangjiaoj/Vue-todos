@@ -2,7 +2,7 @@
     <div class="block-double-row-info">
         <div class="div-wrap">
             <div class="title">公司信息  </div>
-            <van-cell-group v-show="showGroupId == 1">
+            <van-cell-group >
                 <van-field v-model="formInfo.companyName" :disabled="true" label="公司名称"  placeholder="请输入"/>
                 <van-field v-model="formInfo.legalPerson" :disabled="true" label="法人代表" placeholder="请输入"/>
                 <van-field v-model="formInfo.registerDate" :disabled="false"  is-link readonly label="注册日期" @click="showCalendar = true" />
@@ -13,7 +13,7 @@
            
         <div class="div-wrap">
             <div class="title">水平 </div>
-            <van-cell-group v-show="showGroupId == 6">
+            <van-cell-group>
                 <van-field v-model="formInfo.sciIdenty" :disabled="true" readonly label="企业认定" placeholder="请选择"   @click="showIdentyPicker = true"/>
                 <van-field v-model="formInfo.receiveInvest"  :disabled="false" label="获得投资" placeholder="请输入"/>
                 <van-field v-model="taxCreditLevelName" :disabled="false" readonly label="信用评级" placeholder="请选择"  @click="showLevelPicker = true"/>
@@ -52,7 +52,7 @@
     let formInfo = reactive({});
     //form表单数据合并
     watchEffect(()=>{
-        console.log('watch-----baseInfo')
+        console.log('watch-----baseInfo',props.baseInfo)
         Object.assign(formInfo,props.baseInfo||{})  
         console.log(formInfo)
     })
@@ -61,7 +61,7 @@
     /***申请按钮***/
     const aplBtnObj = reactive({
         disabled:false,
-        text:"立即查询创新积分"
+        text:"立即查询"
     })
     watchEffect(()=>{
         if(props.isInfoSubmited){
@@ -122,12 +122,6 @@
 
 <style lang="less" scoped>
     @import '~assets/init.less';
-
-    .elder-app {
-        .van-cell {
-            .bigFont(14)
-        }
-    }
     .block-double-row-info{
         :deep(.van-field) {
              display: block !important;
@@ -161,8 +155,8 @@
     }
 
        .apply-wrap {
-        // position: fixed;
-        // bottom: 0px;
+        position: fixed;
+        bottom: 0px;
         width: 100%;
         padding: 12px 16px;
         text-align: center;
@@ -172,7 +166,7 @@
             line-height: 43px;
             background: #f0f1f3;
             color: #CDD0D7;
-
+            font-size:18px;
             &.active {
                 background: #306CFF;
                 color: #fff

@@ -1,16 +1,21 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import List from '../views/list/index.vue'
-import Detail from '../views/detail/index.vue';
+ 
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/List',
     name: 'List',
-    component: List
+    component: () => import( '../views//list/index.vue')
   },
   {
     path: '/Detail',
     name: 'Detail',
-    component:Detail
+    component:()=>import  ('../views/detail/index.vue') 
+  },
+  {
+    path: '/apply',
+    name: 'apply',
+    component:()=>import  ('../views/apply/index.vue') 
   },
   {
     path: '/about',

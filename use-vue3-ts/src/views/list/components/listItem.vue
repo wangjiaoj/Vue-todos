@@ -10,8 +10,8 @@
 
 <script lang="ts">
  
-import {ref,defineComponent}from 'vue';
-import {useRouter, useRoute } from 'vue-router'
+// import {ref,defineComponent}from 'vue';
+// import {useRouter, useRoute } from 'vue-router'
 export default defineComponent({
     props:["data"],
     setup(props) {

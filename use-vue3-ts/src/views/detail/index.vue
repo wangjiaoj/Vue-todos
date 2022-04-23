@@ -4,7 +4,7 @@
     <p>用户名：{{userInfo.name}}</p>
     <p>用户角色：{{userInfo.role}}</p>
     <h3>列表：</h3>
-    <div class="list-item" v-for="item in list" :key="item.id">{{item.address}}</div>
+    <div class="list-item" v-for="item in list" :key="item.id" @click="goApply(item)">{{item.address}}</div>
   
   </div>
 </template>
@@ -19,6 +19,15 @@ export default defineComponent({
       // 这层包裹会在template中自动解开
      const { userInfo, projectList } = useSomeData()
      let text = ref("my活动");
+     let router = useRouter();
+     const goApply = (item:any)=>{
+         router.push({
+           path:'apply',
+           params:{
+             id:item.id
+           }
+         })
+     }
       return {
         text,
         userInfo,
@@ -28,8 +37,8 @@ export default defineComponent({
          * 都会导致丧失响应性
         */
         
-        list: projectList 
-
+        list: projectList ,
+        goApply
       } 
   }
 })
