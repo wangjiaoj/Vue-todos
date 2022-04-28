@@ -18,6 +18,17 @@ const routes: Array<RouteRecordRaw> = [
     component:()=>import  ('../views/apply/index.vue') 
   },
   {
+    path: '/lifeCircle',
+    name: 'lifeCircle',
+    component:()=>import  ('../views/lifeCircle/index.vue') 
+  },
+  {
+    path: '/keepAlive',
+    name: 'keepAlive',
+    component:()=>import  ('../views/lifeCircle/keepAlive.vue') 
+  },
+  
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
